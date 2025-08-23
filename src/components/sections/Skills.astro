@@ -1,0 +1,34 @@
+---
+import Card from '../Card.astro';
+import { Briefcase, Boxes, Code, Database, BrainCircuit, Users, TerminalSquare } from 'lucide-react';
+
+const skillsData = [
+    { category: "Módulos SAP", icon: Briefcase, items: ["MM (Gestión de Materiales)", "PS (Sistemas de Proyectos)", "FI (Finanzas)", "CO (Controlling)"] },
+    { category: "Plataformas SAP", icon: Boxes, items: ["S/4HANA Cloud & On-Premise", "SAP ECC", "SAP Fiori", "SAP Cloud ALM", "SAP CBC"] },
+    { category: "Lenguajes & Desarrollo", icon: Code, items: ["ABAP", "Python", "SQL", "JavaScript", "React", "UI5", "HTML/CSS"] },
+    { category: "Bases de Datos", icon: Database, items: ["HANA", "SQL Server", "Oracle", "MySQL", "MongoDB"] },
+    { category: "Herramientas y DevOps", icon: TerminalSquare, items: ["Git", "Docker", "Panaya", "Bizagi", "Power BI", "VSCode"] },
+    { category: "Metodologías", icon: Users, items: ["SAP Activate", "Agile (Scrum, Kanban)", "DevOps", "RICEF", "PRADEA"] },
+    { category: "Inteligencia Artificial", icon: BrainCircuit, items: ["Modelos de Lenguaje", "Redes Neuronales (Python)", "Agentes Inteligentes"] },
+];
+---
+<section id="skills" class="py-24">
+    <h2 class="text-4xl font-bold mb-12 text-center">Caja de Herramientas Técnicas</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        {skillsData.map(({ category, icon: Icon, items }) => (
+            <Card>
+                <div class="flex items-center gap-4 mb-6">
+                    <Icon className="text-primary" size={32} />
+                    <h3 class="text-xl font-bold text-text-primary">{category}</h3>
+                </div>
+                <div class="flex flex-wrap gap-2">
+                    {items.map(item => (
+                        <span class="bg-background text-text-secondary text-sm font-medium px-3 py-1 rounded-full border border-card/50">
+                            {item}
+                        </span>
+                    ))}
+                </div>
+            </Card>
+        ))}
+    </div>
+</section>

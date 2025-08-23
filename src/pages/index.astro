@@ -1,11 +1,44 @@
 ---
-import Welcome from '../components/Welcome.astro';
 import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Hero from '../components/sections/Hero.astro';
+import About from '../components/sections/About.astro';
+import Experience from '../components/sections/Experience.astro';
+import Skills from '../components/sections/Skills.astro';
+import Projects from '../components/sections/Projects.astro';
 
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+// Metadatos y datos de contacto centralizados
+const SITE = {
+    title: "Edwin Flores Sanchez | Consultor SAP S/4HANA",
+    description: "Portafolio profesional de Edwin Flores Sanchez, un Consultor SAP S/4HANA e Ingeniero de Sistemas especializado en implementación, migración y soporte de soluciones SAP."
+};
+
+const contactInfo = {
+    email: "ejuniorfloress@gmail.com",
+    linkedin: "https://www.linkedin.com/in/edwinflores19/",
+    github: "https://github.com/EdwinFlores19"
+};
 ---
-
-<Layout>
-	<Welcome />
+<Layout title={SITE.title} description={SITE.description}>
+  <Header />
+  <main class="px-6 md:px-10 lg:px-20 max-w-7xl mx-auto">
+    <Hero contactInfo={contactInfo} />
+    <About />
+    <Experience />
+    <Skills />
+    <Projects />
+  </main>
+  <footer class="text-center py-16 mt-24 border-t border-card/50">
+    <h3 class="text-3xl font-bold mb-4">Hablemos</h3>
+    <p class="max-w-md mx-auto text-text-secondary mb-8">
+        Siempre estoy abierto a discutir nuevos proyectos, oportunidades de trabajo o simplemente para conectar.
+    </p>
+    <a href={`mailto:${contactInfo.email}`}
+       class="inline-block bg-primary text-white font-semibold py-3 px-8 rounded-lg hover:bg-primary/80 transition-transform duration-300 hover:scale-105 text-lg">
+       Enviar un Correo
+    </a>
+    <p class="mt-12 text-sm text-text-secondary">
+        © {new Date().getFullYear()} Edwin Flores Sanchez. Diseñado con esmero y construido con Astro & Tailwind CSS.
+    </p>
+  </footer>
 </Layout>

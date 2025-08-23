@@ -1,0 +1,18 @@
+---
+import ExperienceItem from '../ExperienceItem.jsx';
+const experiences = [
+    { date: "Ene. 2025 - Actualidad", title: "Consultor Funcional SAP MM (Migración Bluefield)", company: "MINSUR", description: "Participación clave en la migración selectiva de SAP ECC a S/4HANA Private Edition, validando datos, ejecutando pruebas críticas y adaptando flujos a las mejores prácticas de S/4HANA." },
+    { date: "Jun. 2025", title: "Capacitador SAP PS", company: "STRACON", description: "Diseñé y ejecuté una capacitación integral sobre el módulo PS de S/4HANA, impulsando la adopción funcional con sesiones prácticas alineadas a escenarios reales del negocio." },
+    { date: "May. 2025", title: "Consultor de Best Practices SAP", company: "ECUAJUGOS", description: "Lideré la implementación del paquete de Best Practices para S/4HANA Cloud, validando flujos, configurando localizaciones y dirigiendo la transferencia de conocimiento." },
+    { date: "Feb. 2025", title: "Consultor Técnico Sprint Zero", company: "SIERRA METALS", description: "Responsable de la configuración base en la fase Sprint Zero de SAP S/4HANA, definiendo estándares funcionales y elaborando materiales de formación técnica." },
+    { date: "Nov. 2024 - Ene. 2025", title: "Consultor Funcional SAP MM (Rollout)", company: "Industrias San Miguel", description: "Participé en el rollout regional de SAP S/4HANA, realizando pruebas funcionales, ajustes al maestro de materiales y alineando flujos logísticos con plantillas globales." },
+];
+---
+<section id="experience" class="py-24">
+    <h2 class="text-4xl font-bold mb-16 text-center">Experiencia Profesional</h2>
+    <div class="max-w-3xl mx-auto">
+        {experiences.map(exp => (
+            <ExperienceItem client:visible date={exp.date} title={exp.title} company={exp.company} description={exp.description} />
+        ))}
+    </div>
+</section>
