@@ -1,5 +1,13 @@
 ---
 import { Mail, Linkedin, Github } from 'lucide-react';
+interface Props {
+  contactInfo: {
+    email: string;
+    linkedin: string;
+    github: string;
+  };
+}
+
 const { contactInfo } = Astro.props;
 ---
 <section id="home" class="min-h-screen flex items-center justify-center text-center -mt-20">

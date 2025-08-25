@@ -1,0 +1,16 @@
+[{
+    "icon": "Award",
+    "title": "1er Lugar - Concurso Capstone",
+    "description": "Galardonado con el primer lugar en el concurso Capstone de la USIL por el desarrollo del proyecto RIA (Reactive Intelligent Agent), destacando en innovación y excelencia técnica."
+  },
+  {
+    "icon": "Presentation",
+    "title": "Líder de Capacitación SAP PS",
+    "description": "Lideré y ejecuté la capacitación completa del módulo Project System para usuarios clave en STRACON, asegurando una transición fluida y la adopción efectiva de SAP S/4HANA."
+  },
+  {
+    "icon": "UserCheck",
+    "title": "Instructor y Mentor SAP",
+    "description": "Formé exitosamente a un trainee en el ecosistema SAP, abarcando desde la navegación y estructura organizativa hasta el ciclo de vida completo de un proyecto y sus mejores prácticas."
+  }
+]

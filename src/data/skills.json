@@ -1,0 +1,36 @@
+[{
+    "category": "Módulos SAP",
+    "icon": "Briefcase",
+    "items": ["MM (Gestión de Materiales)", "PS (Sistemas de Proyectos)", "FI (Finanzas)", "CO (Controlling)"]
+  },
+  {
+    "category": "Plataformas SAP",
+    "icon": "Boxes",
+    "items": ["S/4HANA Cloud & On-Premise", "SAP ECC", "SAP Fiori", "SAP Cloud ALM", "SAP CBC"]
+  },
+  {
+    "category": "Lenguajes & Desarrollo",
+    "icon": "Code",
+    "items": ["ABAP", "Python", "SQL", "JavaScript", "React", "TypeScript", "Astro", "Tailwind", "UI5", "HTML/CSS"]
+  },
+  {
+    "category": "Bases de Datos",
+    "icon": "Database",
+    "items": ["HANA", "SQL Server", "Oracle", "MySQL", "MongoDB"]
+  },
+  {
+    "category": "Herramientas y DevOps",
+    "icon": "TerminalSquare",
+    "items": ["Git", "Docker", "Panaya", "Bizagi", "Power BI", "VSCode"]
+  },
+  {
+    "category": "Metodologías",
+    "icon": "Users",
+    "items": ["SAP Activate", "Agile (Scrum, Kanban)", "DevOps", "RICEF", "PRADEA"]
+  },
+  {
+    "category": "Inteligencia Artificial",
+    "icon": "BrainCircuit",
+    "items": ["Modelos de Lenguaje", "Redes Neuronales (Python)", "Agentes Inteligentes"]
+  }
+]
