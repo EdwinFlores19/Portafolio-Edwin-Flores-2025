@@ -1,0 +1,57 @@
+---
+import Card from '../Card.astro';
+import { Github } from 'lucide-react';
+
+const projects = [
+    {
+        title: "Portafolio de Proyectos",
+        description: "Mi portafolio personal construido con Astro y Tailwind CSS, mostrando mis habilidades y proyectos.",
+        link: "https://github.com/EdwinFlores19/Portafolio-Edwin-Flores-2025"
+    },
+    {
+        title: "Análisis de Precios de Viviendas",
+        description: "Aplicación en Streamlit para el análisis estadístico de precios de viviendas, usando Python.",
+        link: "https://github.com/EdwinFlores19/Analisis-Estadistico-House-Prices-Streamlit"
+    },
+    {
+        title: "API REST para Tienda",
+        description: "API RESTful desarrollada en C# para la gestión de una tienda en línea.",
+        link: "https://github.com/EdwinFlores19/API-REST-ProyectoDBP-TIENDA"
+    },
+    {
+        title: "Aplicación SAP UI5",
+        description: "Proyecto desarrollado con SAP UI5 y JavaScript, demostrando capacidades en el ecosistema SAP.",
+        link: "https://github.com/EdwinFlores19/SAP-UI5-16072025"
+    },
+    {
+        title: "Simulador de Billar",
+        description: "Un simulador de billar simple desarrollado en Python, como un proyecto personal divertido.",
+        link: "https://github.com/EdwinFlores19/billar-python-20072025"
+    },
+    {
+        title: "Creador de Cuestionarios",
+        description: "Una herramienta para crear cuestionarios y preguntas, similar a Kahoot, para fines educativos.",
+        link: "https://github.com/EdwinFlores19/Creador-de-Cuestionarios-y-Preguntas-Competencia-de-Kahoot"
+    }
+];
+---
+<section id="github-projects" class="py-24">
+    <h2 class="text-4xl font-bold mb-12 text-center">Mis Proyectos en GitHub</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        {projects.map(project => (
+            <a href={project.link} target="_blank" rel="noopener noreferrer">
+                <Card>
+                    <Github className="text-primary mb-4" size={36}/>
+                    <h3 class="text-xl font-bold mb-2">{project.title}</h3>
+                    <p class="text-text-secondary">{project.description}</p>
+                </Card>
+            </a>
+        ))}
+    </div>
+    <div class="text-center mt-12">
+        <a href="https://github.com/EdwinFlores19" target="_blank" rel="noopener noreferrer"
+           class="inline-block bg-primary text-white font-semibold py-3 px-8 rounded-lg hover:bg-primary/80 transition-transform duration-300 hover:scale-105 text-lg">
+           Ver más en GitHub
+        </a>
+    </div>
+</section>
