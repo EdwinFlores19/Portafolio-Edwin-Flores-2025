@@ -1,0 +1,43 @@
+
+[
+  {
+    "id": "1",
+    "name": "Diseño de la interfaz de usuario",
+    "start": "2025-08-28",
+    "end": "2025-09-05",
+    "progress": 50,
+    "dependencies": ""
+  },
+  {
+    "id": "2",
+    "name": "Desarrollo del frontend",
+    "start": "2025-09-06",
+    "end": "2025-09-20",
+    "progress": 25,
+    "dependencies": "1"
+  },
+  {
+    "id": "3",
+    "name": "Desarrollo del backend",
+    "start": "2025-09-10",
+    "end": "2025-09-25",
+    "progress": 10,
+    "dependencies": "1"
+  },
+  {
+    "id": "4",
+    "name": "Pruebas y depuración",
+    "start": "2025-09-26",
+    "end": "2025-10-05",
+    "progress": 0,
+    "dependencies": "2,3"
+  },
+  {
+    "id": "5",
+    "name": "Despliegue",
+    "start": "2025-10-06",
+    "end": "2025-10-10",
+    "progress": 0,
+    "dependencies": "4"
+  }
+]
